@@ -1,0 +1,75 @@
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 15vh;
+     position: fixed;
+    
+}
+
+
+.container h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+    color: #dc3545;
+    animation: blink 0.5s infinite;
+    letter-spacing: 0.5rem;
+
+}
+.link{
+    text-decoration: none;
+    color:white;
+}
+.buttongroup{
+    display: flex;
+    gap:0.5rem;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ 
+  @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttongroup button {
+  animation: fadeIn 0.5s forwards;
+  opacity: 0;
+}
+
+.buttongroup button:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.buttongroup button:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.buttongroup button:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.buttongroup button:nth-child(4) {
+  animation-delay: 1.5s;
+}

@@ -20,6 +20,28 @@ const pokes = [
   "rattata",
   "raticate",
 ];
+const prices = [
+  null,
+  10,
+  29,
+  21,
+  34,
+  56,
+  78,
+  65,
+  34,
+  78,
+  12,
+  45,
+  6,
+  79,
+  32,
+  54,
+  87,
+  43,
+  56,
+  23,
+];
 
 const images = [
   null,
@@ -43,12 +65,12 @@ const images = [
   "https://images.wikidexcdn.net/mwuploads/wikidex/c/c4/latest/20200307022853/Rattata.png",
   "https://www.pngmart.com/files/22/Raticate-Pokemon-PNG.png",
 ];
-
-const arrayObj = pokes.map((name, index) => ({
+const arrayObj = pokes.slice(1).map((name, index) => ({
   name: name,
-  url: images[index],
+  price: prices[index + 1],
+  url: images[index + 1],
 }));
 
 console.log(arrayObj);
 
-export default arrayObj;
+export { arrayObj };

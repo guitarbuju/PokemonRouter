@@ -1,9 +1,9 @@
 import styles from "./about.module.css";
-import Pokes from "../../stuff";
+import {arrayObj} from "../../stuff";
 
 const About = () => {
   
- const newPoke = Pokes.slice(1)
+ const newPoke = arrayObj.slice(1)
  console.log(newPoke)
    const randomNumber = Math.floor(Math.random() * newPoke.length);
 
@@ -23,8 +23,8 @@ const About = () => {
       </div>
 
       <div className={styles.imgwrapper}>
-        <h4>HELLO IM {Pokes[randomNumber].name.toUpperCase()}</h4>
-        <img className={styles.img} src={Pokes[randomNumber].url} />
+        <h4>HELLO IM {arrayObj[randomNumber].name.toUpperCase()}</h4>
+        <img className={styles.img} src={arrayObj[randomNumber].url} />
       </div>
     </div>
   );

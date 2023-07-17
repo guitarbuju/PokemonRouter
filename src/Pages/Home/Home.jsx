@@ -1,8 +1,8 @@
 import styles from "./home.module.css";
-import Pokes from "../../stuff";
+import {arrayObj }from "../../stuff";
 
 const Home = () => {
-  const newPoke = Pokes.slice(1);
+  const newPoke = arrayObj.slice(1);
   console.log(newPoke);
   const randomNumber = Math.floor(Math.random() * newPoke.length);
 

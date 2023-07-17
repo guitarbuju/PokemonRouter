@@ -1,14 +1,14 @@
 import { useForm } from "react-hook-form";
 import styles from "./contact.module.css";
 import { useState } from "react";
-import Pokes from "../../stuff";
+import {arrayObj} from "../../stuff";
 
 const Contact = () => {
   const [person, setPerson] = useState(null);
   const [img, setImg] = useState("");
   // eslint-disable-next-line no-unused-vars
   const [selectedPokemon, setSelectedPokemon] = useState("");
-  const newPokes = Pokes;
+  const newPokes = arrayObj;
 
   const {
     register,

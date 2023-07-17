@@ -1,29 +1,21 @@
-import { useEffect, useState } from "react";
-import styles from './pokemon.module.css'
-
+import { arrayObj } from "../../stuff";
+import styles from "./pokemon.module.css";
 
 const Pokemon = () => {
-  const [pokemonList, setPokemonList] = useState([]);
+  const newPoke = arrayObj.slice(1);
+  console.log(newPoke);
+  const randomNumber = Math.floor(Math.random() * newPoke.length);
 
-  const fetchPokemon = async () => {
-    const fecthData = await fetch("https://pokeapi.co/api/v2/pokemon");
-    const data = await fecthData.json();
-    const dadata = data.results;
-    
-
-    setPokemonList(dadata);
-  };
-  useEffect(() => {
-    fetchPokemon();
-  }, []);
-console.log(pokemonList)
   return (
-  
-  <div>
-    <ul className={styles.lista}>
-        { pokemonList.map((pokemon,index)=><li key={index}>{pokemon.name}</li>)}
-    </ul>
-  </div>
-)};
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <h3>{newPoke[randomNumber].name}</h3>
+        <p>{newPoke[randomNumber].description}</p>
+      </div>
+
+      <img style={{ width: "300px" }} src={newPoke[randomNumber].url} />
+    </div>
+  );
+};
 
 export default Pokemon;

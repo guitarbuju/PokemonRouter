@@ -9,7 +9,7 @@ const Pokemon = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h3>{newPoke[randomNumber].name}</h3>
+        <h3 className={styles.title}>{newPoke[randomNumber].name.toUpperCase()}</h3>
         <p>{newPoke[randomNumber].description}</p>
       </div>
 

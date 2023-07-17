@@ -17,3 +17,11 @@
     text-align: justify;
      gap:1vw;
 }
+
+.title{
+    font-family: 'Poppins', sans-serif;
+  font-size: 5.5em;
+  font-weight: 700;
+  text-align: center;
+
+}

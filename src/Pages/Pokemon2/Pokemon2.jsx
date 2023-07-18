@@ -9,9 +9,6 @@ const Pokemon = () => {
 
   const [currentPage, setCurrentPage] = useState(0);
 
-  
-  
-
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -20,12 +17,20 @@ const Pokemon = () => {
         </h3>
         <p>{newPoke[currentPage].description}</p>
         <ul className={classNames(styles.btnlist, "btn-group")}>
-          {newPoke.map((e,index) => <li key={index}><button className={classNames(styles.dabuttons,'btn btn-danger')} onClick={()=>setCurrentPage(index)}>{e.name}</button></li>)}
+          {newPoke.map((e, index) => (
+            <li key={index}>
+              <button
+                className={classNames(styles.dabuttons, "btn btn-danger")}
+                onClick={() => setCurrentPage(index)}
+              >
+                {e.name}
+              </button>
+            </li>
+          ))}
         </ul>
       </div>
-     
+
       <img style={{ width: "300px" }} src={newPoke[currentPage].url} />
-      
     </div>
   );
 };

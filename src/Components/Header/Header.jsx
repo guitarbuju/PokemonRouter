@@ -16,10 +16,13 @@ const Header = () => {
           <Link className={styles.link} to="/contact">Contact</Link>
         </button>
         <button className="btn btn-danger">
-          <Link className={styles.link} to="/pokemon">Pokemon</Link>
+          <Link className={styles.link} to="/pokemon">By Page</Link>
         </button>
         <button className="btn btn-danger">
-          <Link className={styles.link} to="/pokemon2">Pokemon2</Link>
+          <Link className={styles.link} to="/pokemon2">By Buttons</Link>
+        </button>
+        <button className="btn btn-danger">
+          <Link className={styles.link} to="/pokemon3">By Cards</Link>
         </button>
       </div>
       <h2>!!!!POKEMON HERE!!!!</h2>

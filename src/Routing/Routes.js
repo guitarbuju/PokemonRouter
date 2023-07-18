@@ -2,6 +2,7 @@ import Home from "../Pages/Home/Home.jsx";
 import About from "../Pages/About/About.jsx";
 import Contact from "../Pages/Contact/Contact.jsx";
 import Pokemon from '../Pages/Pokemon/Pokemon.jsx'
+import Pokemon2 from '../Pages/Pokemon2/Pokemon2.jsx'
 import NotFound from "../Pages/NotFound/NotFound.jsx";
 import MainLayout from "../Components/MainLayout/MainLayout.jsx";
 
@@ -25,6 +26,10 @@ const routes = [
       {
         path: "/pokemon",
         Component: Pokemon,
+      },
+      {
+        path: "/pokemon2",
+        Component: Pokemon2,
       }
     ],
   },

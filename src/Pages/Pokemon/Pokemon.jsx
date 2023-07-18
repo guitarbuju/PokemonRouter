@@ -32,6 +32,7 @@ const Pokemon = () => {
         </h3>
         <p>{newPoke[currentPage].description}</p>
         <div className="btn-group" >
+        
           <button className="btn btn-danger" onClick={AdvancePage}>Forward</button>
           <button className="btn btn-danger" onClick={backPage}>Backward</button>
         </div>

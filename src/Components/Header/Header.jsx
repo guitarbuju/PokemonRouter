@@ -18,6 +18,9 @@ const Header = () => {
         <button className="btn btn-danger">
           <Link className={styles.link} to="/pokemon">Pokemon</Link>
         </button>
+        <button className="btn btn-danger">
+          <Link className={styles.link} to="/pokemon2">Pokemon2</Link>
+        </button>
       </div>
       <h2>!!!!POKEMON HERE!!!!</h2>
     </div>

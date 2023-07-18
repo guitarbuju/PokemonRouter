@@ -3,7 +3,7 @@ import styles from "./pokemon2.module.css";
 import { useState } from "react";
 import classNames from "classnames";
 
-const Pokemon = () => {
+const Pokemon2 = () => {
   const newPoke = arrayObj.slice(1);
   console.log(newPoke);
 
@@ -35,4 +35,4 @@ const Pokemon = () => {
   );
 };
 
-export default Pokemon;
+export default Pokemon2;

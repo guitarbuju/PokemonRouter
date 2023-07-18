@@ -23,11 +23,32 @@
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1000px;
+  width: 1200px;
   list-style-type: none;
 }
 
 .dabuttons{
   margin: 2px;
   width:8vw;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width:600px;
+  text-align: justify;
+   gap:3vw;
+   margin-top: -80px;
+}
+
+.daimage{
+  width:300px;
+}
+.title2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:2vh;
 }

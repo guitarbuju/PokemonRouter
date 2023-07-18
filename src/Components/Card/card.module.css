@@ -2,18 +2,30 @@
 .imgroup{
     display:flex;
     flex-direction: column;
-    margin-right: 5px;
+    margin-right: 10px;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
     flex-wrap: wrap;
+    width:110px;
+   
+    padding: 5px;
+ 
    
 }
-
+.imgroup:hover {
+    transform: scale(1.1); /* Increase the size of the card on hover */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a slight shadow effect */
+  
+    
+  }
 .daimg{
     width:6vw;
 }
 
 .title{
     padding-bottom: 20px;
+    font-size: 15px;
 }
